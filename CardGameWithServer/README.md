@@ -26,15 +26,14 @@ The game uses JavaFX for the graphical interface and Java Sockets for communicat
 
 ## 📁 Project Structure
 MemoryGame/
-├── src/
-│ ├── CardGameServer.java
-│ ├── CardGameClient.java
-│ ├── CardGameController.java
-│ ├── CardGameWithTwoClients.java
-│ ├── BoardState.java
-│ ├── CardGame.fxml
-│ ├── dog1.png ... dog8.png
-
+└── src/
+    ├── CardGameServer.java
+    ├── CardGameClient.java
+    ├── CardGameController.java
+    ├── CardGameWithTwoClients.java
+    ├── BoardState.java
+    ├── CardGame.fxml
+    └── dog1.png ... dog8.png
 
 ---
 
