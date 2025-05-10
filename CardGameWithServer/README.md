@@ -1,32 +1,30 @@
+🧠 Multiplayer Memory Game
+A memory card game for two players connected over a network. Each player gets an identical board and tries to reveal matching pairs. The game uses JavaFX for the graphical interface and Java Sockets for communication between the server and clients.
 
-# 🧠 משחק זיכרון ברשת (Multiplayer Memory Game)
+🚀 Key Features
+Two-player game (Client-Server architecture).
 
-משחק זיכרון (Memory Game) לשני שחקנים המתחברים דרך רשת. כל שחקן מקבל לוח זהה ומנסה לגלות זוגות תואמים. המשחק משתמש ב-JavaFX לממשק הגרפי וב-Sockets לתקשורת בין השרת לשני לקוחות.
+Beautiful and intuitive JavaFX GUI.
 
----
+Image matching on board buttons (dog1.png, dog2.png, etc.).
 
-## 🚀 תכונות עיקריות
+Turn management, scoring, and end-of-game handling.
 
-- משחק לשני שחקנים (Client-Server).
-- ממשק גרפי יפה ונוח עם JavaFX.
-- התאמת תמונות ללחצני הלוח (dog1.png, dog2.png וכו').
-- ניהול תור, ניקוד וסיום משחק.
-- מניעת לחיצה על יותר משני קלפים.
+Prevents more than two cards from being flipped at once.
 
----
+🛠️ Requirements
+Java 17+ (or any version supporting JavaFX 23.0.2)
 
-## 🛠️ דרישות
+JavaFX SDK installed
 
-- Java 17+ (או כל גרסה התומכת ב-JavaFX 23.0.2)
-- JavaFX מותקן כ-SDK
-- Eclipse או IDE תומך בפרויקטי JavaFX
-- קבצי התמונות (dog1.png ... dog8.png) בתיקיית `src`
+Eclipse or any JavaFX-compatible IDE
 
----
+Image files (dog1.png ... dog8.png) placed inside the src folder
 
-## 📁 מבנה הפרויקט
-
-```
+📁 Project Structure
+css
+Copy
+Edit
 MemoryGame/
 ├── src/
 │   ├── CardGameServer.java
@@ -36,40 +34,27 @@ MemoryGame/
 │   ├── BoardState.java
 │   ├── CardGame.fxml
 │   ├── dog1.png ... dog8.png
-```
+▶️ How to Run
+1. Run the Server
+Launch CardGameServer.java
 
----
+Listens on port 7777 by default
 
-## ▶️ הפעלה
+2. Run Two Clients
+Launch CardGameClient.java twice
 
-### 1. הפעלת השרת
-- הפעל את המחלקה `CardGameServer.java`
-- מאזין כברירת מחדל על פורט `7777`
+Each client enters IP and port (e.g., localhost, 7777)
 
-### 2. הפעלת שני לקוחות
-- הפעל פעמיים את המחלקה `CardGameClient.java`
-- כל לקוח מזין IP ופורט (למשל: `localhost`, `7777`)
+3. Start Playing
+Both players receive the same board.
 
-### 3. התחלת המשחק
-- שני השחקנים יקבלו לוח זהה.
-- כל שחקן בתורו מנסה לחשוף זוג תואם.
+Players take turns trying to find matching pairs.
 
----
 
-## 📸 צילום מסך
+📝 Notes
+The image files must be placed in the src folder, not resources.
 
-![Screenshot](screenshot.png) <!-- אם יש תמונה לצרף, שים אותה בתיקייה עם השם הזה -->
+This game is designed for exactly two players.
 
----
+No installation required – just run it from your IDE.
 
-## 🧩 קרדיטים
-
-פיתוח על ידי אור סבן, כתרגיל במסגרת קורס תכנות מתקדם (ממן 16 שאלה 1).
-
----
-
-## 📝 הערות
-
-- התמונות חייבות להיות ממוקמות בתיקיית `src` ולא בתיקיית resources.
-- המשחק מיועד לשני שחקנים בלבד.
-- אין צורך בהתקנה – רק הרצה מתוך IDE.
