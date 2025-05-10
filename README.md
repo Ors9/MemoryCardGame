@@ -27,23 +27,24 @@ A memory card game for **two players over a network**. Each player gets an ident
 ## 📁 Project Structure
 
 MemoryCardGame/
+
 ├── src/
 
-│   ├── CardGameClient.java  
-│   ├── CardGameController.java  
-│   ├── CardGameServer.java  
-│   ├── CardGameWithTwoClients.java  
-│   ├── BoardState.java  
-│   ├── CardGame.fxml  
-│   ├── dog1.png  
-│   ├── dog2.png  
-│   ├── dog3.png  
-│   ├── dog4.png  
-│   ├── dog5.png  
-│   ├── dog6.png  
-│   ├── dog7.png  
-│   └── dog8.png  
-├── README.md  
+  │   ├── CardGameClient.java  
+  │   ├── CardGameController.java  
+  │   ├── CardGameServer.java  
+  │   ├── CardGameWithTwoClients.java  
+  │   ├── BoardState.java  
+  │   ├── CardGame.fxml  
+  │   ├── dog1.png  
+  │   ├── dog2.png  
+  │   ├── dog3.png  
+  │   ├── dog4.png  
+  │   ├── dog5.png  
+  │   ├── dog6.png  
+  │   ├── dog7.png  
+  │   └── dog8.png  
+  ├── README.md  
 └── משחק הזיכרון.pdf (optional)
 
 
