@@ -1,75 +1,79 @@
+# 🧠 Multiplayer Memory Game
 
-# 🧠 משחק זיכרון ברשת (Multiplayer Memory Game)
-
-משחק זיכרון (Memory Game) לשני שחקנים המתחברים דרך רשת. כל שחקן מקבל לוח זהה ומנסה לגלות זוגות תואמים. המשחק משתמש ב-JavaFX לממשק הגרפי וב-Sockets לתקשורת בין השרת לשני לקוחות.
-
----
-
-## 🚀 תכונות עיקריות
-
-- משחק לשני שחקנים (Client-Server).
-- ממשק גרפי יפה ונוח עם JavaFX.
-- התאמת תמונות ללחצני הלוח (dog1.png, dog2.png וכו').
-- ניהול תור, ניקוד וסיום משחק.
-- מניעת לחיצה על יותר משני קלפים.
+A memory card game for **two players over a network**. Each player gets an identical board and takes turns trying to find matching pairs. The game is built with **JavaFX** for the GUI and uses **Java Sockets** for server-client communication.
 
 ---
 
-## 🛠️ דרישות
+## 🚀 Features
 
-- Java 17+ (או כל גרסה התומכת ב-JavaFX 23.0.2)
-- JavaFX מותקן כ-SDK
-- Eclipse או IDE תומך בפרויקטי JavaFX
-- קבצי התמונות (dog1.png ... dog8.png) בתיקיית `src`
+- 🔗 Two-player multiplayer (Client-Server architecture)
+- 🎨 Responsive and intuitive UI with JavaFX
+- 🖼️ Image-based cards (dog1.png to dog8.png)
+- 🔄 Turn-based gameplay and score tracking
+- 🛡️ Prevents flipping more than two cards per turn
+- 🏁 Game ends when all pairs are matched
 
 ---
 
-## 📁 מבנה הפרויקט
+## 🛠️ Requirements
 
-```
-MemoryGame/
+- Java 17+  
+- JavaFX SDK (tested with JavaFX 23.0.2)  
+- IDE like Eclipse or IntelliJ with JavaFX support  
+- Place `dog1.png` to `dog8.png` directly in the `src` folder (not in resources)
+
+---
+
+## 📁 Project Structure
+
+MemoryCardGame/
 ├── src/
-│   ├── CardGameServer.java
-│   ├── CardGameClient.java
-│   ├── CardGameController.java
-│   ├── CardGameWithTwoClients.java
-│   ├── BoardState.java
-│   ├── CardGame.fxml
-│   ├── dog1.png ... dog8.png
-```
+│   ├── CardGameClient.java  
+│   ├── CardGameController.java  
+│   ├── CardGameServer.java  
+│   ├── CardGameWithTwoClients.java  
+│   ├── BoardState.java  
+│   ├── CardGame.fxml  
+│   ├── dog1.png  
+│   ├── dog2.png  
+│   ├── dog3.png  
+│   ├── dog4.png  
+│   ├── dog5.png  
+│   ├── dog6.png  
+│   ├── dog7.png  
+│   └── dog8.png  
+├── README.md  
+└── משחק הזיכרון.pdf (optional)
+
 
 ---
 
-## ▶️ הפעלה
+## ▶️ How to Run
 
-### 1. הפעלת השרת
-- הפעל את המחלקה `CardGameServer.java`
-- מאזין כברירת מחדל על פורט `7777`
+### 🖥️ 1. Start the Server
+- Run `CardGameServer.java`
+- Default port is `7777`
 
-### 2. הפעלת שני לקוחות
-- הפעל פעמיים את המחלקה `CardGameClient.java`
-- כל לקוח מזין IP ופורט (למשל: `localhost`, `7777`)
+### 👥 2. Run the Clients
+- Run `CardGameClient.java` **twice** (on the same machine or different ones)
+- Enter the **IP** and **port** when prompted (`localhost`, `7777` by default)
 
-### 3. התחלת המשחק
-- שני השחקנים יקבלו לוח זהה.
-- כל שחקן בתורו מנסה לחשוף זוג תואם.
-
----
-
-## 📸 צילום מסך
-
-![Screenshot](screenshot.png) <!-- אם יש תמונה לצרף, שים אותה בתיקייה עם השם הזה -->
+### 🕹️ 3. Play the Game
+- Each player clicks to reveal 2 cards.
+- If the cards match, the player gets a point and another turn.
+- If not, cards are hidden again and turn switches.
 
 ---
 
-## 🧩 קרדיטים
+## 📝 Notes
 
-פיתוח על ידי אור סבן, כתרגיל במסגרת קורס תכנות מתקדם (ממן 16 שאלה 1).
+- The `.png` files must be in the same directory as the `.java` files (`src/`)
+- Works in local network or remote if firewall allows access to the port.
+- Designed as a simple academic multiplayer Java project.
 
 ---
 
-## 📝 הערות
+## 👤 Author
 
-- התמונות חייבות להיות ממוקמות בתיקיית `src` ולא בתיקיית resources.
-- המשחק מיועד לשני שחקנים בלבד.
-- אין צורך בהתקנה – רק הרצה מתוך IDE.
+Developed by **Or Saban**
+
